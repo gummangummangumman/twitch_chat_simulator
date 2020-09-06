@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <!-- importing the jQuery library  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- importing my own javascript file -->
+    <script src="javascript/twitch.js"></script>
+    
+    <!-- importing the styling -->
+    <link rel="stylesheet" type="text/css" href="css/twitch.css">
+    
+<meta charset="utf-8">
+<title>Twitch chat simulator</title>
+</head>
+<body onload="init()">
+
+
+
+
+    
+    <div id="notchat">
+        
+        <form onsubmit="return false">
+            <input type="text" id="youtubelink" placeholder="insert youtube URL here">
+            
+            <input type="submit" id="videoButton" onClick="getVideo()" value="get video" onKeyPress="checkForEnter(event)">
+        </form>
+        
+    </div>
+    
+    
+    
+    <div id="chat">
+        
+        <div id="abovechat">
+            <p id="channelname" onclick="changeChannel()">Click me to change channel</p>
+        </div>
+        
+        <div id="chattext">
+        </div>
+        
+        <div id="input">
+            <form onsubmit="return false">
+                <input type="text" id="textfield" placeholder="send a message">
+                
+            
+                <input type="submit" id="chatButton" onClick="chat()" value="Chat" onKeyPress="checkForEnter(event)">
+            </form>
+            
+            
+            <button id="settingsButton" onclick="toggleSettings()">settings</button>
+            
+        </div>
+    </div>
+    
+    
+</body>
+</html>
