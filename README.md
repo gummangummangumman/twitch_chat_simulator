@@ -1,3 +1,3 @@
 # Twitch Chat Simulator
 
-Watch youtube videos while you have a fake twitch chat. Live demo on [my website](https://gumman.one/twitch_chat_simulator).
+Watch youtube videos with a fake twitch chat on the side. [Live demo](https://gumman.one/twitch_chat_simulator).

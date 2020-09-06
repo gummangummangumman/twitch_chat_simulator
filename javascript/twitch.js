@@ -1,6 +1,6 @@
 var spamming = false;
 var darkMode = false;
-var spamType = "positive";
+var spamType = "laughing";
 
 var usernamePrefixes = ["crazy", "universal", "sick", "insane", "cool", "fun", "mad", "generic", "Cpt", "nice", "adolf", "Dan", "VAC", "SWE", "Wizard", "faceless", "olof",
                         "best_", "daddy", "mama", "mister_", "davai", "Nick", "de_", "the_", "iAm", "Loungin", "extra", "BOT", "dirty", "shoutout_to_", "devil", "Only"];
@@ -10,8 +10,13 @@ var usernameSuffixes = ["Kappa", "Sniper", "marshmellow", "Shrek", "M", "LUL", "
 
 var usernameColors = ["red", "green", "#40b7b5", "blue", "purple", "#aa9929"];
 
-var positiveMessages = ["VAC", "VAC", "VAC", "VAC", "VAC", "VAC", "VAC", "WTF", "LUL", "holy shit", "SAVED", "ez", "GG", "Kappa", "4Head", "WHAT", "PogChamp", "PogChamp PogChamp PogChamp PogChamp PogChamp"];
-var negativeMessages = ["BOT", "BOT", "BOT", "BOT", "BOT", "NA CS", "NA CS", "WTF", "LUL", "HAHAHAHA", "OMG", "LMAO", "so bad omg", "xD", "gg", "RUINED", "Kappa", "WutFace", "NotLikeThis", "4Head"];
+var laughingMessages = ["OMEGALUL", "OMEGALUL Clap", "LULW", "KEKW"];
+var positiveMessages = ["VAC", "VAC", "VAC", "VAC", "VAC", "VAC", "WTF", "LUL", "holy shit","SAVED",
+"ez", "GG", "Kappa", "4Head", "WHAT", "PogChamp", "PogChamp PogChamp PogChamp PogChamp PogChamp",
+"KQLY STYLE", "ANY NAFFERS SeriousSloth", "Kreygasm"];
+var negativeMessages = ["BOT", "BOT", "BOT", "BOT", "BOT", "NA CS", "NA CS", "WTF",
+"LUL", "HAHAHAHA", "OMG", "LMAO", "so bad omg", "xD", "gg", "RUINED", "Kappa", "WutFace",
+"NotLikeThis", "4Head", "OMEGALUL", "OMEGALUL Clap", "JAME TIME", "BibleThump"];
 var bobRossMessage = ["SAVED", "RUINED", "SAVED", "RUINED", "CoolStoryBob"];
 
 
@@ -26,7 +31,14 @@ var emotes = [
     ["catJAM", "catJAM.gif"],
     ["KEKW", "KEKW.png"],
     ["OMEGALUL", "OMEGALUL.png"],
-    ["PepeLaugh", "PepeLaugh.png"]
+    ["PepeLaugh", "PepeLaugh.png"],
+    ["Clap", "Clap.gif"],
+    ["LULW", "LULW.png"],
+    ["SeriousSloth", "SeriousSloth.png"],
+    ["TriHard", "TriHard.png"],
+    ["Poggers", "Poggers.png"],
+    ["BibleThump", "BibleThump.png"],
+    ["Kreygasm", "Kreygasm.png"]
 ];
 
 
@@ -69,6 +81,8 @@ function getMessage()
         msgBody = (negativeMessages[Math.floor(Math.random()*negativeMessages.length)]);
     else if(spamType=="bobross")
         msgBody = (bobRossMessage[Math.floor(Math.random()*bobRossMessage.length)]);
+    else if(spamType=="laughing")
+        msgBody = (laughingMessages[Math.floor(Math.random()*laughingMessages.length)]);
 
     msgBody = replace_emotes(msgBody);
 
@@ -281,14 +295,18 @@ function makeSettings()
     
     var positiveSpam = $('<option></option>');
     positiveSpam.attr("value", "positive");
-    positiveSpam.append("Positive");
+    positiveSpam.append("Positive (CS)");
     var negativeSpam = $('<option></option>');
     negativeSpam.attr("value", "negative");
-    negativeSpam.append("Negative");
+    negativeSpam.append("Negative (CS)");
     var bobRossSpam = $('<option></option>');
     bobRossSpam.attr("value", "bobross");
     bobRossSpam.append("Bob Ross");
+    var laughingSpam = $('<option></option>');
+    laughingSpam.attr("value", "laughing");
+    laughingSpam.append("Laughing");
     
+    selectSpam.append(laughingSpam);
     selectSpam.append(positiveSpam);
     selectSpam.append(negativeSpam);
     selectSpam.append(bobRossSpam);
