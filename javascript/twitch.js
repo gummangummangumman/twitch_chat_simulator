@@ -37,9 +37,11 @@ function getMessage()
     else if(spamType=="negative")
         msgBody = (negativeMessages[Math.floor(Math.random()*negativeMessages.length)]);
     else if(spamType=="bobross")
-        msgBody = (bobRossMessage[Math.floor(Math.random()*bobRossMessage.length)]);
+        msgBody = (bobRossMessages[Math.floor(Math.random()*bobRossMessages.length)]);
     else if(spamType=="laughing")
         msgBody = (laughingMessages[Math.floor(Math.random()*laughingMessages.length)]);
+    else if(spamType=="spam")
+        msgBody = (spamMessages[Math.floor(Math.random()*spamMessages.length)]);
 
     msgBody = replace_emotes(msgBody);
 
@@ -266,11 +268,15 @@ function makeSettings()
     var laughingSpam = $('<option></option>');
     laughingSpam.attr("value", "laughing");
     laughingSpam.append("Laughing");
+    var spamSpam = $('<option></option>');
+    spamSpam.attr("value", "spam");
+    spamSpam.append("Spam");
     
     selectSpam.append(laughingSpam);
     selectSpam.append(positiveSpam);
     selectSpam.append(negativeSpam);
     selectSpam.append(bobRossSpam);
+    selectSpam.append(spamSpam);
     
     
     var selectSpeed = $('<input></input>');
