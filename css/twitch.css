@@ -2,6 +2,7 @@
 {
     background-color: #ffffff;
     position: fixed;
+    min-width: 270px;
     width: 20%;
     height: 100%;
     
@@ -11,7 +12,10 @@
 
 #abovechat
 {
-    height: 4%;
+    position: relative;
+    height: 7.5%;
+    min-height: 30px;
+    max-height: 45px;
     text-align: center;
     border-bottom: solid;
     border-bottom-width: 1px;
@@ -28,7 +32,7 @@
 #abovechat input
 {
     position: relative;
-    top: 5px;
+    top: 20%;
     margin: 0px;
     padding: 0px;
     height: 20px;
@@ -45,8 +49,8 @@
 
 #chattext
 {
-    top: 4%;
-    height: 86%;
+    position:relative;
+    height: 92.5%;
     overflow-y: auto;
 }
 
@@ -63,13 +67,19 @@
     border-radius: 2px;
 }
 
+#aboveinput
+{
+    height: 90%;
+}
+
 #input
 {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    height: 10%;
-    
+    height: 15%;
+    min-height: 40px;
+    max-height: 100px;
 }
 
 #textfield
@@ -139,10 +149,10 @@ p
     position: absolute;
     z-index: 1000000;
     background-color: white;
-    width: 60%;
-    height: 30%;
+    width: 65%;
+    height: 280px;
     
-    bottom: 10%;
+    bottom: 12%;
     left: 2.5%;
     
     border: solid;
@@ -216,6 +226,8 @@ li
     width: 50%;
     font-size: 24px;
     top: 45%;
+    
+    border-radius: 4px;
 }
 
 #videoButton
@@ -224,6 +236,9 @@ li
     left: 65%;
     width: 10%;
     top: 50%;
+    padding: 5px;
+    
+    border-radius: 4px;
 }
 
 #errormsg
@@ -232,6 +247,12 @@ li
     left: 25%;
     top: 45%;
     z-index: -1;
+}
+
+iframe
+{
+    padding: 0px;
+    margin: 0px;
 }
 
 body
