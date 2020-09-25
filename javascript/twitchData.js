@@ -26,17 +26,7 @@ var negativeMessages = [
     "My team Sadge", "KEKW", "Pepega", "D:", "WeirdChamp", "monkaS"];
 var bobRossMessages = ["SAVED", "RUINED", "SAVED", "RUINED", "CoolStoryBob"];
 var spamMessages = [
-    "AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap",
-    "AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap",
-    "AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap",
-    "AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap",
-    "AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap",
-    "AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap",
-    "AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap",
-    "AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap",
-    "AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap",
-    "AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap AYAYA Clap",
-    "WEEBS OUT DansGame"];
+    "is it me or is olofmeister a bit of a boring player. like u see it at the end of the game \"oh wow olofmeister has 32 kills\" but u can never remember them. can u remember a single olofmeister kill ? but try guardian...u can see the flick. I remember a guardian flick."];
 
 
 
@@ -79,4 +69,6 @@ var emotes = [
     ["FeelsGoodMan", "FeelsGoodMan.png"],
     ["FeelsWeirdMan", "FeelsWeirdMan.png"],
     ["FeelsDankMan", "FeelsDankMan.png"],
+    ["pepeD", "pepeD.gif"],
+    ["pepeDS", "PEPEDS.gif"],
 ];
